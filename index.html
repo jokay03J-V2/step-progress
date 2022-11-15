@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="site description">
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="./js/app.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="site description">
+  <title>Hello</title>
+</head>
+
+<body>
+  <main>
+    <form>
+      <ol>
+        <li class="active" data-active="false">
+          <div class="marker">1</div>
+          <a id="0">Choose your title</a>
+        </li>
+        <li>
+          <div class="marker">2</div><a id="1">Choose your description</a>
+        </li>
+        <li data-active="true">
+          <div class="marker">3</div><a id="2">Confirm data</a>
+        </li>
+      </ol>
+    </form>
+    <div id="router">
+      <div id="route-0" class="route">
+        <p>Choose title content</p>
+        <button id="btn-title">Submit title</button>
+      </div>
+      <div id="route-1" class="route">
+        <p>Choose description content</p>
+        <div class="buttons"><button id="btn-back-1">Back</button><button>Submit description</button></di>
+        </div>
+      </div>
+      <div id="route-2" class="route">
+        <p>Are you happy now?</p><button>No, go back</button><button>Yes, go ahead</button>
+      </div>
+  </main>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>

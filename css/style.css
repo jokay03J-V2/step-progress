@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #8e44ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    height: 15%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    padding: 40px;
+}
+
+form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+li {
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #797979;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+li:hover a {
+    color: black;
+}
+
+li:hover:not(.active) .marker{
+    color: black;
+}
+
+a,a:visited {
+    color: #797979;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+.active .marker {
+    background-color: #2a80b9;
+    color: white;
+}
+
+.active a {
+    color: black;
+}
+
+.marker {
+    transition: all ease 0.5s;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-right: 10px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#router {
+    width: 50%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    background-color: #eeeeee;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.route {
+    display: none;
+}
