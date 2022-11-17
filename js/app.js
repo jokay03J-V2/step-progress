@@ -46,7 +46,7 @@ document.getElementById("btn-back-1").addEventListener("click", () => {
         route.style.display = "none";
     }
     document.getElementById("route-0").style.display = "block"
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < as.length; index++) {
         const element = as[index];
         element.parentElement.classList.remove("active")
     }
@@ -55,4 +55,55 @@ document.getElementById("btn-back-1").addEventListener("click", () => {
         element.parentElement.classList.add("active")
     }
 
+})
+
+document.getElementById("btn-next-1").addEventListener("click",(ev) => {
+    for (let index = 0; index < routes.length; index++) {
+        const route = routes[index];
+        route.style.display = "none";
+    }
+    document.getElementById("route-2").style.display = "block"
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        element.parentElement.classList.remove("active")
+    }
+    for (let index = 0; index < 3; index++) {
+        const element = as[index];
+        element.parentElement.classList.add("active")
+    }
+})
+
+document.getElementById("btn-back-2").addEventListener("click", (ev) => {
+    for (let index = 0; index < routes.length; index++) {
+        const route = routes[index];
+        route.style.display = "none";
+    }
+    document.getElementById("route-1").style.display = "block"
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        element.parentElement.classList.remove("active")
+    }
+    for (let index = 0; index < 2; index++) {
+        const element = as[index];
+        element.parentElement.classList.add("active")
+    }
+})
+
+document.getElementById("btn-next-2").addEventListener("click", (ev) => {
+    for (let index = 0; index < routes.length; index++) {
+        const route = routes[index];
+        route.style.display = "none";
+    }
+    document.getElementById("route-3").style.display = "block"
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        element.parentElement.classList.remove("active")
+    }
+    for (let index = 0; index < 3; index++) {
+        const element = as[index];
+        element.parentElement.classList.add("active")
+    }
+    console.log("title:", document.getElementById("input-0").value);
+    console.log("description:", document.getElementById("input-1").value);
+    console.log("happy?", document.getElementById("btn-next-2").value);
 })

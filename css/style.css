@@ -19,7 +19,7 @@ main {
     padding: 40px;
 }
 
-form {
+#form-li {
     height: 100%;
     width: 50%;
     display: flex;
@@ -102,4 +102,15 @@ p {
 
 .route {
     display: none;
+}
+
+input {
+    border: none;   
+    width: 100%;
+    transition: all ease-in 0.5s;
+}
+
+input:hover, input:focus {
+    border: none;
+    outline: #8e44ad 1px solid;
 }
